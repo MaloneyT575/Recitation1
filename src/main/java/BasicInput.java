@@ -11,11 +11,28 @@ public class BasicInput {
 
         System.out.println("Enter integer:");
         userInt = scnr.nextInt();
+        System.out.println(userInt);
 
-        // TODO (1): Finish reading other items into variables, then output the four values on a single line separated by a space
+        System.out.println("Enter double: ");
+        userDouble = scnr.nextDouble();
+        System.out.println(userDouble);
 
-        // TODO (2): Output the four values in reverse
+        System.out.println("Enter Character: ");
+        String userStrings;
+        userStrings = "zoo";
+        userChar = userStrings.charAt(0);
+        System.out.println(userChar);
 
+        System.out.print("Enter String: ");
+        scnr.nextLine();
+        userString = scnr.nextLine();
+        System.out.println(userString);
+
+
+        System.out.println("" + userInt + " " + userDouble + " " + userChar + " " + userString);
+        System.out.println("" + userString + " " + userChar + " " + userDouble + " " + userInt);
+        userInt = (int)userDouble;
+        System.out.println(userDouble + " " + "cast to an integar is " + userInt);
         // TODO (3): Cast the double to an integer, and output that integer
 
     }

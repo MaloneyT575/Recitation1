@@ -11,29 +11,22 @@ public class BasicInput {
 
         System.out.println("Enter integer:");
         userInt = scnr.nextInt();
-        System.out.println(userInt);
 
-        System.out.println("Enter double: ");
+        System.out.println("Enter double:");
         userDouble = scnr.nextDouble();
-        System.out.println(userDouble);
 
-        System.out.println("Enter Character: ");
-        String userStrings;
-        userStrings = "zoo";
-        userChar = userStrings.charAt(0);
-        System.out.println(userChar);
+        System.out.println("Enter character:");
+        userChar = scnr.next().charAt(0);
 
-        System.out.print("Enter String: ");
+        System.out.println("Enter string:");
         scnr.nextLine();
         userString = scnr.nextLine();
-        System.out.println(userString);
 
 
-        System.out.println("" + userInt + " " + userDouble + " " + userChar + " " + userString);
-        System.out.println("" + userString + " " + userChar + " " + userDouble + " " + userInt);
-        userInt = (int)userDouble;
-        System.out.println(userDouble + " " + "cast to an integar is " + userInt);
-        // TODO (3): Cast the double to an integer, and output that integer
+        System.out.println(userInt + " " + userDouble + " " + userChar + " " + userString);
+        System.out.println(userString + " " + userChar + " " + userDouble + " " + userInt);
+        System.out.println(userDouble + " " + "cast to an integer is " + (int) userDouble);
+
 
     }
 }
